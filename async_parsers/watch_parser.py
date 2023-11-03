@@ -72,6 +72,7 @@ result_json = list()
 soup = get_soup(start_url)
 page_urls = get_page_urls(soup)
 
+# asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())  # uncomment if you are using Windows OS
 asyncio.run(main())
 
 with open('watches.json', 'w', encoding='utf-8') as file:
