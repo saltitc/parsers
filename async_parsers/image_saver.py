@@ -1,3 +1,9 @@
+"""
+This script asynchronously downloads and saves 449 images and displays their size.
+For correct operation, create a folder in the project root called 'images'.
+!!! If you are using Windows OS uncomment line 42 !!!
+"""
+
 import time
 import aiofiles
 import asyncio
